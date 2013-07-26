@@ -1,0 +1,33 @@
+[submodule "vim/bundle/ctrlp"]
+	path = vim/bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vim/bundle/fugitive"]
+	path = vim/bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "vim/bundle/markdown"]
+	path = vim/bundle/markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule "vim/bundle/commentary"]
+	path = vim/bundle/commentary
+	url = https://github.com/tpope/vim-commentary.git
+[submodule "vim/bundle/coffee-script"]
+	path = vim/bundle/coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
+[submodule "vim/bundle/json"]
+	path = vim/bundle/json
+	url = https://github.com/leshill/vim-json.git
+[submodule "vim/bundle/i3-syntax"]
+	path = vim/bundle/i3-syntax
+	url = https://github.com/PotatoesMaster/i3-vim-syntax.git
+[submodule "vim/bundle/solarized-colors"]
+	path = vim/bundle/solarized-colors
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "vim/bundle/javascript-syntax"]
+	path = vim/bundle/javascript-syntax
+	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule "vim/bundle/ps1"]
+	path = vim/bundle/ps1
+	url = https://github.com/PProvost/vim-ps1.git
+[submodule "vim/bundle/pathogen"]
+	path = vim/bundle/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
