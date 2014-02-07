@@ -15,3 +15,11 @@ set -o vi
 
 # Map Ctrl+l to clear screen in Vim insert mode
 bind -m vi-insert "\C-l":clear-screen
+
+# Start SSH Agent if requested
+read -p "Do you want to start SSH Agent? [y/N] " answer
+case $answer in
+  Y|y)
+    eval `ssh-agent`>/dev/null && ssh-add
+    ;;
+esac
