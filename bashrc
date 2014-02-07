@@ -8,7 +8,7 @@ alias ls='ls --color=auto'
 export EDITOR=vim
 
 # Make PS1 fancier
-PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
+PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[0;36m\]\w\[\e[m\]\[\e[1;36m\]$(__git_ps1)\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
 
 # Use Vim mappings
 set -o vi
