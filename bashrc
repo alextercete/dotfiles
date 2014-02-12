@@ -1,8 +1,13 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Add color to ls
+# Create default aliases
 alias ls='ls --color=auto'
+
+# Load custom aliases
+if [ -f ~/.bash_aliases ]; then
+  . ~/.bash_aliases
+fi
 
 # Make sure Vim is the editor
 export EDITOR=vim
