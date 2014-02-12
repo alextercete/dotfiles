@@ -1,0 +1,11 @@
+[user]
+    name = Alex Tercete
+    email = alextercete@gmail.com
+[alias]
+    graph = log --decorate --oneline --graph
+[color]
+    ui = true
+[help]
+    autocorrect = 1
+[include]
+    path = .gitconfig_overrides

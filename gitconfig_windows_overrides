@@ -1,0 +1,15 @@
+[core]
+    autocrlf = true
+    whitespace = cr-at-eol
+    editor = gvim
+[diff]
+    tool = p4merge
+[difftool "p4merge"]
+    cmd = "p4merge $LOCAL $REMOTE"
+[merge]
+    tool = p4merge
+[mergetool "p4merge"]
+    cmd = "p4merge $BASE $LOCAL $REMOTE $MERGED"
+    trustExitCode = true
+[mergetool]
+    keepBackup = false
