@@ -34,12 +34,14 @@ set softtabstop=4               " <Backspace> goes back four spaces when on an i
 set autoindent                  " Keep previous line's indentation when creating a new one
 set backspace=indent,eol,start  " <Backspace> works on autoindents, line breaks and start of line
 
-
 set t_Co=256                    " Activate 256 colors support
 set background=light            " Set background
 syntax on                       " Enable syntax highlighting
 colorscheme solarized           " Set colorscheme
 
+
+""" Display whitespace character nicely
+set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\ 
 
 "-------------------------------------
 " Custom mappings
