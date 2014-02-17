@@ -41,7 +41,7 @@ colorscheme solarized           " Set colorscheme
 
 
 """ Display whitespace character nicely
-set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:▸\ 
+set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:›\ 
 
 "-------------------------------------
 " Custom mappings
