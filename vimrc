@@ -65,6 +65,9 @@ map <Leader>y "*y
 """ Use ',f' for CtrlP
 map <Leader>f <C-p>
 
+""" Use ',l' to toggle whitespace markers
+nmap <Leader>l :set list!<CR>
+
 """ Disable arrows for moving around
 map <Left> <Nop>
 map <Right> <Nop>
