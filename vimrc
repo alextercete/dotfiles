@@ -39,9 +39,8 @@ set background=light            " Set background
 syntax on                       " Enable syntax highlighting
 colorscheme gruvbox             " Set colorscheme
 
-
 """ Display whitespace character nicely
-set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:›\ 
+set listchars=tab:›\ ,trail:·,precedes:«,extends:»,eol:↲
 
 "-------------------------------------
 " Colorscheme specifics
