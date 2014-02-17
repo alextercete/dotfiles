@@ -37,11 +37,18 @@ set backspace=indent,eol,start  " <Backspace> works on autoindents, line breaks 
 set t_Co=256                    " Activate 256 colors support
 set background=light            " Set background
 syntax on                       " Enable syntax highlighting
-colorscheme solarized           " Set colorscheme
+colorscheme gruvbox             " Set colorscheme
 
 
 """ Display whitespace character nicely
 set listchars=trail:·,precedes:«,extends:»,eol:↲,tab:›\ 
+
+"-------------------------------------
+" Colorscheme specifics
+"-------------------------------------
+
+""" gruvbox
+let g:gruvbox_invert_selection = 0
 
 "-------------------------------------
 " Custom mappings
