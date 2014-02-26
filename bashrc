@@ -3,6 +3,9 @@
 
 # Create default aliases
 alias ls='ls --color=auto'
+alias gs='git status'
+alias gd='git diff'
+alias gg='git graph'
 
 # Load custom aliases
 if [ -f ~/.bash_aliases ]; then
