@@ -14,6 +14,7 @@ call :makeFileSymlink "%vim_folder%\linux-gvimrc" "%current_folder%\gvimrc"
 
 :: Other
 call :makeFileSymlink "%home_folder%\.bashrc" "%current_folder%\bashrc"
+call :makeFolderSymlink "%home_folder%\.git_template" "%current_folder%\git_template"
 call :makeFileSymlink "%home_folder%\.gitconfig" "%current_folder%\gitconfig"
 call :makeFileSymlink "%home_folder%\.gitconfig_overrides" "%current_folder%\gitconfig_windows_overrides"
 
