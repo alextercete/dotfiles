@@ -20,11 +20,11 @@ Function New-Symlink {
 Write-Host "-> Creating symbolic links..."
 
 # Vim
-New-Symlink "$HOME\vimfiles" "$DOTFILES\vim"
-New-Symlink "$HOME\.vimrc" "$DOTFILES\vimrc"
-New-Symlink "$HOME\.gvimrc" "$DOTFILES\gvimrc"
-New-Symlink "$HOME\_vimrc" "$DOTFILES\_vimrc"
-New-Symlink "$HOME\_gvimrc" "$DOTFILES\_gvimrc"
+New-Symlink "$HOME\vimfiles" "$DOTFILES\vim\.vim"
+New-Symlink "$HOME\.vimrc" "$DOTFILES\vim\.vimrc"
+New-Symlink "$HOME\.gvimrc" "$DOTFILES\vim\.gvimrc"
+New-Symlink "$HOME\_vimrc" "$DOTFILES\vim\_vimrc"
+New-Symlink "$HOME\_gvimrc" "$DOTFILES\vim\_gvimrc"
 
 # Other
 New-Symlink "$HOME\.bashrc" "$DOTFILES\bashrc"
