@@ -28,9 +28,9 @@ New-Symlink "$HOME\_gvimrc" "$DOTFILES\vim\_gvimrc"
 
 # Other
 New-Symlink "$HOME\.bashrc" "$DOTFILES\bashrc"
-New-Symlink "$HOME\.git_template" "$DOTFILES\git_template"
-New-Symlink "$HOME\.gitconfig" "$DOTFILES\gitconfig"
-New-Symlink "$HOME\.gitconfig_overrides" "$DOTFILES\gitconfig_windows_overrides"
-New-Symlink "$HOME\.gitignore_global" "$DOTFILES\gitignore_global"
+New-Symlink "$HOME\.git_template" "$DOTFILES\git\.git_template"
+New-Symlink "$HOME\.gitconfig" "$DOTFILES\git\.gitconfig"
+New-Symlink "$HOME\.gitconfig_overrides" "$DOTFILES\git\.gitconfig_windows_overrides"
+New-Symlink "$HOME\.gitignore_global" "$DOTFILES\git\.gitignore_global"
 
 Write-Host "-> Done!"
