@@ -1,4 +1,38 @@
+$OS = "windows"
 $DOTFILES = Get-Location
+
+Function Install-Symlinks {
+    $filesToSymlink = Get-ChildItem $DOTFILES\*\* | where {$_.Name -match "\.($OS-)?symlink$"}
+
+    foreach ($file in $filesToSymlink) {
+        $name = Get-Basename $file.Name
+        $symlink = "$HOME\$name"
+        $target = $file.FullName
+
+        New-Symlink "$symlink" "$target"
+    }
+}
+
+Function Install-ConfigurableSymlinks {
+    $symlinkConfigFiles = Get-ChildItem $DOTFILES\*\* | where {$_.Name -match "\.symlinks$"}
+
+    foreach ($configFile in $symlinkConfigFiles) {
+        $config = cat $configFile.FullName
+        $configuredName = $config | % {$null = $_ -match "^$OS" + ':\s+(?<link>.+)$'; $matches.link} | select -f 1
+
+        if ($configuredName) {
+            $symlink = "$HOME\$configuredName"
+            $target = Get-Basename $configFile.FullName
+
+            New-Symlink "$symlink" "$target"
+        }
+    }
+}
+
+Function Get-Basename {
+    Param($string)
+    return $string.Substring(0, $string.LastIndexOf('.'))
+}
 
 Function New-Symlink {
     Param($symlink, $target)
@@ -18,19 +52,6 @@ Function New-Symlink {
 }
 
 Write-Host "-> Creating symbolic links..."
-
-# Vim
-New-Symlink "$HOME\vimfiles" "$DOTFILES\vim\.vim"
-New-Symlink "$HOME\.vimrc" "$DOTFILES\vim\.vimrc"
-New-Symlink "$HOME\.gvimrc" "$DOTFILES\vim\.gvimrc"
-New-Symlink "$HOME\_vimrc" "$DOTFILES\vim\_vimrc"
-New-Symlink "$HOME\_gvimrc" "$DOTFILES\vim\_gvimrc"
-
-# Other
-New-Symlink "$HOME\.bashrc" "$DOTFILES\bash\.bashrc"
-New-Symlink "$HOME\.git_template" "$DOTFILES\git\.git_template"
-New-Symlink "$HOME\.gitconfig" "$DOTFILES\git\.gitconfig"
-New-Symlink "$HOME\.gitconfig_overrides" "$DOTFILES\git\.gitconfig_windows_overrides"
-New-Symlink "$HOME\.gitignore_global" "$DOTFILES\git\.gitignore_global"
-
+Install-Symlinks
+Install-ConfigurableSymlinks
 Write-Host "-> Done!"

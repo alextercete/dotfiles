@@ -10,7 +10,7 @@
 [core]
     excludesfile = ~/.gitignore_global
 [include]
-    path = ~/.gitconfig_overrides
+    path = ~/.gitconfig_include
 [init]
     templatedir = ~/.git_template
 [orgs "vtex"]
