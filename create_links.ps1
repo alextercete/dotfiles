@@ -1,5 +1,4 @@
 $DOTFILES = Get-Location
-$VIM = Join-Path ${env:ProgramFiles(x86)} Vim
 
 Function New-Symlink {
     Param($symlink, $target)
@@ -21,9 +20,11 @@ Function New-Symlink {
 Write-Host "-> Creating symbolic links..."
 
 # Vim
-New-Symlink "$VIM\vimfiles" "$DOTFILES\vim"
-New-Symlink "$VIM\linux-vimrc" "$DOTFILES\vimrc"
-New-Symlink "$VIM\linux-gvimrc" "$DOTFILES\gvimrc"
+New-Symlink "$HOME\vimfiles" "$DOTFILES\vim"
+New-Symlink "$HOME\.vimrc" "$DOTFILES\vimrc"
+New-Symlink "$HOME\.gvimrc" "$DOTFILES\gvimrc"
+New-Symlink "$HOME\_vimrc" "$DOTFILES\_vimrc"
+New-Symlink "$HOME\_gvimrc" "$DOTFILES\_gvimrc"
 
 # Other
 New-Symlink "$HOME\.bashrc" "$DOTFILES\bashrc"
