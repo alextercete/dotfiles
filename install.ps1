@@ -43,7 +43,7 @@ Function New-Symlink {
         if (Test-Path $symlink) { cmd /c rmdir /s /q $symlink }
         (cmd /c mklink /d $symlink $target) > $null
     }
-	else {
+    else {
         if (Test-Path $symlink) { Remove-Item $symlink }
         (cmd /c mklink $symlink $target) > $null
     }
