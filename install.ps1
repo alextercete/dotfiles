@@ -1,5 +1,36 @@
 $OS = "windows"
 $DOTFILES = Get-Location
+$GIT_USER_CONFIG_FILE = "$HOME\.gitconfig_user"
+
+Function Set-GitUser {
+    if (Test-Path $GIT_USER_CONFIG_FILE) {
+        Write-Host "$GIT_USER_CONFIG_FILE already exists. Skipping..."
+    }
+    else {
+        $userName = Read-Host "Name"
+        $userEmail = Read-Host "Email"
+
+        @"
+[user]
+    name = $userName
+    email = $userEmail
+"@ | Set-Content $GIT_USER_CONFIG_FILE
+
+        $answer = Read-Host "`nDo you want to add an organization-specific email? [y/N]"
+
+        if ($answer -match '^[yY]$') {
+            $orgName = Read-Host "Organization"
+            $orgUserEmail = Read-Host "Email"
+
+            @"
+[orgs "$orgName"]
+    email = $orgUserEmail
+"@ | Add-Content $GIT_USER_CONFIG_FILE
+        }
+
+        Write-Host "`n$GIT_USER_CONFIG_FILE created!"
+    }
+}
 
 Function Install-Symlinks {
     $filesToSymlink = Get-ChildItem $DOTFILES\*\* | where {$_.Name -match "\.($OS-)?symlink$"}
@@ -51,6 +82,8 @@ Function New-Symlink {
     Write-Host "$symlink -> $target"
 }
 
+Write-Host "-> Configuring Git user..."
+Set-GitUser
 Write-Host "-> Creating symbolic links..."
 Install-Symlinks
 Install-ConfigurableSymlinks

@@ -1,6 +1,3 @@
-[user]
-    name = Alex Tercete
-    email = alextercete@gmail.com
 [alias]
     graph = log --decorate --oneline --graph
 [color]
@@ -10,8 +7,7 @@
 [core]
     excludesfile = ~/.gitignore_global
 [include]
+    path = ~/.gitconfig_user
     path = ~/.gitconfig_include
 [init]
     templatedir = ~/.git_template
-[orgs "vtex"]
-    email = tercete@vtex.com.br
