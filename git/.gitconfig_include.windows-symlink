@@ -13,3 +13,5 @@
     trustExitCode = true
 [mergetool]
     keepBackup = false
+
+# vim: set ft=gitconfig :
