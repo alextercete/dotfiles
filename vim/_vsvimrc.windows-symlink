@@ -1,0 +1,40 @@
+filetype plugin indent on
+
+set showmatch                       " Mostra as tags relacionadas àquela sob o cursor
+set incsearch                       " Mostra os resultados conforme o termo de busca é digitado
+set hlsearch                        " Realça os resultados de uma busca
+set ignorecase smartcase            " Realiza buscas ignorando maiúsculas/minúsculas se a busca for toda minúscula
+
+set expandtab                       " Tabs são convertidos para espaços
+set tabstop=4                       " Tabs são do tamanho de 4 espaços
+set shiftwidth=4                    " Quando o 'autoindent' faz um tab, ele é do tamanho de 4 espaços
+set softtabstop=4                   " Tecla Backspace volta 4 espaços quando estiver numa identação
+set autoindent                      " Ao criar nova linha, usa indentação da linha anterior
+set backspace=indent,eol,start      " Tecla Backspace funciona sobre autoindents, quebra de linha, e inicio de inserção
+
+set number                          " Mostra os números de linha
+
+"-------------------------------------
+" Mapeamentos personalizados
+"-------------------------------------
+
+""" Troca a tecla leader pra ","
+let mapleader=","
+
+""" Alterna entre Splits com <C-hjkl>
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+""" Copia o que está selecionado para o clipboard
+map <Leader>y "*y
+
+""" Cancela o uso das setas para movimentação
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
+
+""" Limpa os resultados da busca com <CR>
+nnoremap <CR> :nohlsearch<CR>
