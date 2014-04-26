@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function get_org_of_current_repo() {
-    local orgs_from_global_config=$(git config --global --get-regexp ^orgs. | cut -d . -f 2)
+    local orgs_from_global_config=$(git config --get-regexp ^orgs. | cut -d . -f 2)
 
     for org in $orgs_from_global_config; do
         local org_remotes=$(git remote -v | grep -i $org/)
@@ -16,13 +16,13 @@ function get_org_of_current_repo() {
 org=$(get_org_of_current_repo)
 
 if [ ! -z "$org" ]; then
-    email_from_global_config=$(git config --global orgs\.$org\.email)
-    email_from_local_config=$(git config user.email)
+    organization_email=$(git config orgs\.$org\.email)
+    repository_email=$(git config --local user.email)
 
-    if [ "$email_from_global_config" != "$email_from_local_config" ]; then
+    if [ "$organization_email" != "$repository_email" ]; then
         echo "Organization '$org' identified!"
-        echo "Setting the configured e-mail <$email_from_global_config>"
-        git config user.email $email_from_global_config
+        echo "Setting the configured e-mail <$organization_email>"
+        git config --local user.email $organization_email
 
         echo "Please repeat the commit command to use the new e-mail"
         exit 1
