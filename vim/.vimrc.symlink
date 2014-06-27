@@ -71,11 +71,15 @@ map <Leader>f <C-p>
 """ Use '\l' to toggle whitespace markers
 nmap <Leader>l :set list!<CR>
 
-""" Disable arrows for moving around
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
+""" Disable arrow keys for moving around
+noremap <Up> <NOP>
+inoremap <Up> <NOP>
+noremap <Down> <NOP>
+inoremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+inoremap <Left> <NOP>
+inoremap <Right> <NOP>
 
 """ <C-l> mutes search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
