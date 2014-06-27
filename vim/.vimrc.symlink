@@ -33,6 +33,7 @@ set shiftwidth=4                " Auto indent tabs are four spaces wide
 set softtabstop=4               " <Backspace> goes back four spaces when on an indentation
 set autoindent                  " Keep previous line's indentation when creating a new one
 set backspace=indent,eol,start  " <Backspace> works on autoindents, line breaks and start of line
+set pastetoggle=<F2>            " Allow to toggle paste mode for autoindent with <F2>
 
 set t_Co=256                    " Activate 256 colors support
 set background=light            " Set background
