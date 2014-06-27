@@ -18,9 +18,6 @@ set number                          " Mostra os números de linha
 " Mapeamentos personalizados
 "-------------------------------------
 
-""" Troca a tecla leader pra ","
-let mapleader=","
-
 """ Alterna entre Splits com <C-hjkl>
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k

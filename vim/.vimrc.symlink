@@ -53,25 +53,22 @@ let g:gruvbox_invert_selection = 0
 " Custom mappings
 "-------------------------------------
 
-""" Remap leader to ','
-let mapleader=","
-
 """ Switch between splits with <C-hjkl>
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
-""" Switch between files with ',,'
+""" Switch between files with '\\'
 nnoremap <Leader><Leader> <C-^>
 
-""" Copy selection to clipboard with ',y'
+""" Copy selection to clipboard with '\y'
 map <Leader>y "*y
 
-""" Use ',f' for CtrlP
+""" Use '\f' for CtrlP
 map <Leader>f <C-p>
 
-""" Use ',l' to toggle whitespace markers
+""" Use '\l' to toggle whitespace markers
 nmap <Leader>l :set list!<CR>
 
 """ Disable arrows for moving around
@@ -98,7 +95,7 @@ endfunction
 inoremap <TAB> <C-r>=InsertTabWrapper()<CR>
 inoremap <S-TAB> <C-n>
 
-""" Rename the current file with ',n'
+""" Rename the current file with '\n'
 function! RenameFile()
     let old_name = expand('%')
     let new_name = input('New file name: ', expand('%'), 'file')
