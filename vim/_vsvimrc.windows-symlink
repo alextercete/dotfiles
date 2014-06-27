@@ -18,12 +18,6 @@ set number                          " Mostra os números de linha
 " Mapeamentos personalizados
 "-------------------------------------
 
-""" Alterna entre Splits com <C-hjkl>
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
-
 """ Copia o que está selecionado para o clipboard
 map <Leader>y "*y
 
