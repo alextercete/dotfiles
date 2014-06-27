@@ -59,6 +59,9 @@ nnoremap <Leader><Leader> <C-^>
 """ Copy selection to clipboard with '\y'
 map <Leader>y "*y
 
+""" Paste from clipboard to a new line with '\p'
+nmap <Leader>p :pu *<CR>
+
 """ Use '\f' for CtrlP
 map <Leader>f <C-p>
 

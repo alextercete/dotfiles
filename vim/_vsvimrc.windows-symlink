@@ -21,6 +21,9 @@ set number                          " Mostra os números de linha
 """ Copia o que está selecionado para o clipboard
 map <Leader>y "*y
 
+""" Paste from clipboard to a new line with '\p'
+nmap <Leader>p :pu *<CR>
+
 """ Disable arrow keys for moving around
 noremap <Up> <NOP>
 inoremap <Up> <NOP>
