@@ -84,18 +84,6 @@ inoremap <Right> <NOP>
 """ <C-l> mutes search highlighting
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
-""" <Tab> completes if not on the start
-function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<tab>"
-    else
-        return "\<c-p>"
-    endif
-endfunction
-inoremap <TAB> <C-r>=InsertTabWrapper()<CR>
-inoremap <S-TAB> <C-n>
-
 "-------------------------------------
 " Custom autocmds
 "-------------------------------------
