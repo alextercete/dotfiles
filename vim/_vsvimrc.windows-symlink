@@ -1,24 +1,24 @@
 filetype plugin indent on
 
-set showmatch                       " Mostra as tags relacionadas àquela sob o cursor
-set incsearch                       " Mostra os resultados conforme o termo de busca é digitado
-set hlsearch                        " Realça os resultados de uma busca
-set ignorecase smartcase            " Realiza buscas ignorando maiúsculas/minúsculas se a busca for toda minúscula
+set showmatch                   " Show tags related to that under the cursor
+set incsearch                   " Show results as the search term is typed
+set hlsearch                    " Highlight search results
+set ignorecase smartcase        " Search case-insensitively if search term contains only lowercase letters
 
-set expandtab                       " Tabs são convertidos para espaços
-set tabstop=4                       " Tabs são do tamanho de 4 espaços
-set shiftwidth=4                    " Quando o 'autoindent' faz um tab, ele é do tamanho de 4 espaços
-set softtabstop=4                   " Tecla Backspace volta 4 espaços quando estiver numa identação
-set autoindent                      " Ao criar nova linha, usa indentação da linha anterior
-set backspace=indent,eol,start      " Tecla Backspace funciona sobre autoindents, quebra de linha, e inicio de inserção
+set expandtab                   " Convert tabs to spaces
+set tabstop=4                   " Tabs are four spaces wide
+set shiftwidth=4                " Auto indent tabs are four spaces wide
+set softtabstop=4               " <Backspace> goes back four spaces when on an indentation
+set autoindent                  " Keep previous line's indentation when creating a new one
+set backspace=indent,eol,start  " <Backspace> works on autoindents, line breaks and start of line
 
-set number                          " Mostra os números de linha
+set number                      " Show line numbers
 
 "-------------------------------------
-" Mapeamentos personalizados
+" Custom mappings
 "-------------------------------------
 
-""" Copia o que está selecionado para o clipboard
+""" Copy selection to clipboard with '\y'
 map <Leader>y "*y
 
 """ Paste from clipboard to a new line with '\p'
