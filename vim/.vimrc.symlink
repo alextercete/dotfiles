@@ -77,11 +77,8 @@ map <Right> <Nop>
 map <Up> <Nop>
 map <Down> <Nop>
 
-""" <Enter> cleans search results
-function! MapCR()
-  nnoremap <CR> :nohlsearch<CR>
-endfunction
-call MapCR()
+""" <C-l> mutes search highlighting
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 """ <Tab> completes if not on the start
 function! InsertTabWrapper()
