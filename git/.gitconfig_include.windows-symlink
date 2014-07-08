@@ -8,6 +8,7 @@
     tool = p4merge
 [mergetool "p4merge"]
     trustExitCode = true
+[mergetool]
     keepBackup = false
 [difftool]
     prompt = false
