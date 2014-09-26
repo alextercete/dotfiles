@@ -21,7 +21,7 @@
 	url = https://github.com/jelera/vim-javascript-syntax.git
 [submodule "vim/.vim/bundle/json"]
 	path = vim/.vim/bundle/json
-	url = https://github.com/leshill/vim-json.git
+	url = https://github.com/elzr/vim-json.git
 [submodule "vim/.vim/bundle/markdown"]
 	path = vim/.vim/bundle/markdown
 	url = https://github.com/tpope/vim-markdown.git

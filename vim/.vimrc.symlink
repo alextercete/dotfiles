@@ -102,3 +102,6 @@ augroup END
 "-------------------------------------
 """ SQL
 let g:sql_type_default = 'mysql'
+
+""" JSON
+let g:vim_json_syntax_conceal = 0
