@@ -43,3 +43,9 @@
 [submodule "vim/.vim/bundle/less"]
 	path = vim/.vim/bundle/less
 	url = https://github.com/groenewege/vim-less.git
+[submodule "vim/.vim/bundle/ruby"]
+	path = vim/.vim/bundle/ruby
+	url = git@github.com:vim-ruby/vim-ruby.git
+[submodule "vim/.vim/bundle/rails"]
+	path = vim/.vim/bundle/rails
+	url = https://github.com/tpope/vim-rails
