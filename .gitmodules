@@ -49,3 +49,6 @@
 [submodule "vim/.vim/bundle/javascript"]
 	path = vim/.vim/bundle/javascript
 	url = git@github.com:pangloss/vim-javascript.git
+[submodule "vim/.vim/bundle/editorconfig"]
+	path = vim/.vim/bundle/editorconfig
+	url = https://github.com/editorconfig/editorconfig-vim.git
