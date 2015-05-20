@@ -102,3 +102,9 @@ let g:sql_type_default = 'mysql'
 
 """ JSON
 let g:vim_json_syntax_conceal = 0
+
+""" CtrlP
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.git|node_modules|bower_components|build|dist)$',
+  \ 'file': '\v\.(exe|dll)$'
+  \ }
