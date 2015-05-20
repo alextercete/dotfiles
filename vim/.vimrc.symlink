@@ -63,9 +63,6 @@ map <Leader>y "*y
 """ Paste from clipboard to a new line with '\p'
 nmap <Leader>p :pu *<CR>
 
-""" Use '\f' for CtrlP
-map <Leader>f <C-p>
-
 """ Use '\l' to toggle whitespace markers
 nmap <Leader>l :set list!<CR>
 
