@@ -1,40 +1,13 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-# Create default aliases
-alias ls='ls --color=auto'
-alias gs='git status'
-alias gd='git diff'
-alias gds='git diff --staged'
-alias gg='git graph'
-alias npm='npm -s'
+# Source scripts in the ~/.bash.d folder
+if [ -d ~/.bash.d ]; then
+    for file in ~/.bash.d/*.sh; do
+        if [ -r $file ]; then
+            source $file
+        fi
+    done
 
-# Load custom aliases
-if [ -f ~/.bash_aliases ]; then
-  . ~/.bash_aliases
+    unset file
 fi
-
-# Make sure Vim is the editor
-export EDITOR=vim
-
-# Load Git completion scripts
-if [ -f /usr/share/git/completion/git-prompt.sh ]; then
-    source /usr/share/git/completion/git-prompt.sh
-fi
-
-# Make PS1 fancier
-PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[0;36m\]\w\[\e[m\]\[\e[1;36m\]$(__git_ps1)\[\e[m\] \[\e[1;32m\]\$\[\e[m\] '
-
-# Use Vim mappings
-set -o vi
-
-# Map Ctrl+l to clear screen in Vim insert mode
-bind -m vi-insert "\C-l":clear-screen
-
-# Start SSH Agent if requested
-read -p "Do you want to start SSH Agent? [y/N] " answer
-case $answer in
-  Y|y)
-    eval `ssh-agent`>/dev/null && ssh-add
-    ;;
-esac
