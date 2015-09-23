@@ -12,5 +12,7 @@
     path = ~/.gitconfig_include
 [init]
     templatedir = ~/.git_template
+[pull]
+    ff = only
 
 # vim: set ft=gitconfig :
