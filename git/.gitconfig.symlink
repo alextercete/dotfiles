@@ -3,6 +3,9 @@
     whatsnew = !git log ..origin/`git rev-parse --abbrev-ref HEAD`
 [color]
     ui = true
+[pager]
+    diff = diff-highlight | less -FRSX
+    show = diff-highlight | less -FRSX
 [help]
     autocorrect = 1
 [core]
