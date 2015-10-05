@@ -4,6 +4,7 @@
 [color]
     ui = true
 [pager]
+    log = less -FRSX
     diff = diff-highlight | less -FRSX
     show = diff-highlight | less -FRSX
 [help]
