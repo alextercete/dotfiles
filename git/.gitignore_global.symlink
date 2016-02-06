@@ -1,2 +1,5 @@
 # Vim backup files
 *.swp
+
+# OSX custom folder attributes
+.DS_Store
