@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Default aliases
-alias ls='ls --color=auto'
 alias gs='git status'
 alias gd='git diff'
 alias gds='git diff --staged'
