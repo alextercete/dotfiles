@@ -36,7 +36,7 @@ set backspace=indent,eol,start  " <Backspace> works on autoindents, line breaks 
 set pastetoggle=<F2>            " Allow to toggle paste mode for autoindent with <F2>
 
 set t_Co=256                    " Activate 256 colors support
-set background=light            " Set background
+set background=dark             " Set background
 syntax on                       " Enable syntax highlighting
 colorscheme gruvbox             " Set colorscheme
 
