@@ -1,0 +1,9 @@
+# Color `ls` output
+export CLICOLOR=1
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+
+# Load ~/.bashrc
+[[ -s ~/.bashrc ]] && source ~/.bashrc
+
+# Load Bash completion
+source $(brew --prefix)/etc/bash_completion
