@@ -4,8 +4,10 @@
     whatsnew = !git log ..origin/`git rev-parse --abbrev-ref HEAD`
 [color]
     ui = true
+[interactive]
+    diffFilter = diff-highlight
 [pager]
-    log = less -FRSX
+    log = diff-highlight | less -FRSX
     diff = diff-highlight | less -FRSX
     show = diff-highlight | less -FRSX
 [help]
