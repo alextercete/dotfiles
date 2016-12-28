@@ -1,6 +1,7 @@
 [alias]
     graph = log --decorate --oneline --graph
     shove = push --force-with-lease
+    amend = commit --amend --no-edit
 [color]
     ui = true
 [interactive]
