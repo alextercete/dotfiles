@@ -1,7 +1,6 @@
 [alias]
     graph = log --decorate --oneline --graph
     shove = push --force-with-lease
-    whatsnew = !git log ..origin/`git rev-parse --abbrev-ref HEAD`
 [color]
     ui = true
 [interactive]
