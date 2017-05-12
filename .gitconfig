@@ -13,12 +13,13 @@
 [help]
     autocorrect = 1
 [core]
-    excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore.global
 [include]
-    path = ~/.gitconfig_user
-    path = ~/.gitconfig_include
-[init]
-    templatedir = ~/.git_template
+    path = ~/.gitconfig.user
+[includeIf "gitdir:red-gate/"]
+    path = ~/.gitconfig.red-gate.user
+[includeIf "gitdir/i:d:/"]
+    path = ~/.gitconfig.windows
 [pull]
     ff = only
 
