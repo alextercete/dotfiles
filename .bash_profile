@@ -8,4 +8,6 @@ export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 [[ -s ~/.bashrc ]] && source ~/.bashrc
 
 # Load Bash completion
-source $(brew --prefix)/etc/bash_completion
+if hash brew 2>/dev/null; then
+    source $(brew --prefix)/etc/bash_completion
+fi
