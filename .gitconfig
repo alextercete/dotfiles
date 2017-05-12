@@ -17,8 +17,8 @@
 [include]
     path = ~/.gitconfig.user
     path = ~/.gitconfig.windows
-[init]
-    templatedir = ~/.git_template
+[includeIf "gitdir:red-gate/"]
+    path = ~/.gitconfig.red-gate.user
 [pull]
     ff = only
 
