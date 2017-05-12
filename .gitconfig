@@ -16,9 +16,10 @@
     excludesfile = ~/.gitignore.global
 [include]
     path = ~/.gitconfig.user
-    path = ~/.gitconfig.windows
 [includeIf "gitdir:red-gate/"]
     path = ~/.gitconfig.red-gate.user
+[includeIf "gitdir/i:d:/"]
+    path = ~/.gitconfig.windows
 [pull]
     ff = only
 
