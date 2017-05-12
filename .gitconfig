@@ -13,7 +13,7 @@
 [help]
     autocorrect = 1
 [core]
-    excludesfile = ~/.gitignore_global
+    excludesfile = ~/.gitignore.global
 [include]
     path = ~/.gitconfig_user
     path = ~/.gitconfig_include
