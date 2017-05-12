@@ -1,5 +1,14 @@
 #!/bin/bash
 
+get_operating_system() {
+    case "$OSTYPE" in
+        darwin*)
+            echo 'unix' ;;
+        msys*)
+            echo 'windows' ;;
+    esac
+}
+
 # Default aliases
 alias gs='git status'
 alias gd='git diff'
@@ -8,8 +17,8 @@ alias gg='git graph'
 alias npm='npm -s'
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
-# Custom (usually OS-specific) aliases
-if [ -f ~/.bash_aliases ]; then
-  . ~/.bash_aliases
+# OS-specific aliases
+os=$(get_operating_system)
+if [ -f ~/.bash_aliases.$os ]; then
+  . ~/.bash_aliases.$os
 fi
-
