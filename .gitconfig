@@ -15,7 +15,7 @@
 [core]
     excludesfile = ~/.gitignore.global
 [include]
-    path = ~/.gitconfig_user
+    path = ~/.gitconfig.user
     path = ~/.gitconfig_include
 [init]
     templatedir = ~/.git_template
