@@ -13,14 +13,11 @@ call pathogen#infect()
 set encoding=utf-8              " Enforce UTF-8
 
 set hidden                      " Allow switching between unsaved buffers
-set ttyfast                     " Send more characters to the terminal, improving window redraw
 set nowrap                      " Turn off line wrap
-"set virtualedit=all            " Allow moving to areas with no text
 
 set title                       " Show filename on the footer
 set number                      " Show line numbers
 set colorcolumn=120             " Show a guideline at column 120
-set linespace=1                 " Adjust the vertical space between lines
 
 set showmatch                   " Show tags related to that under the cursor
 set hlsearch                    " Highlight search results
@@ -31,7 +28,6 @@ set tabstop=4                   " Tabs are four spaces wide
 set shiftwidth=4                " Auto indent tabs are four spaces wide
 set softtabstop=4               " <Backspace> goes back four spaces when on an indentation
 set autoindent                  " Keep previous line's indentation when creating a new one
-set pastetoggle=<F2>            " Allow to toggle paste mode for autoindent with <F2>
 
 """ Display whitespace character nicely
 set listchars=tab:›\ ,trail:·,precedes:«,extends:»,eol:↲
@@ -88,11 +84,6 @@ endif
 "-------------------------------------
 " Specific config
 "-------------------------------------
-""" SQL
-let g:sql_type_default = 'mysql'
-
-""" JSON
-let g:vim_json_syntax_conceal = 0
 
 """ CtrlP
 let g:ctrlp_custom_ignore = {
