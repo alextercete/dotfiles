@@ -35,20 +35,17 @@ set autoindent                  " Keep previous line's indentation when creating
 set backspace=indent,eol,start  " <Backspace> works on autoindents, line breaks and start of line
 set pastetoggle=<F2>            " Allow to toggle paste mode for autoindent with <F2>
 
-set t_Co=256                    " Activate 256 colors support
-set background=dark             " Set background
-syntax on                       " Enable syntax highlighting
-colorscheme gruvbox             " Set colorscheme
-
 """ Display whitespace character nicely
 set listchars=tab:›\ ,trail:·,precedes:«,extends:»,eol:↲
 
 "-------------------------------------
-" Colorscheme specifics
+" Colors
 "-------------------------------------
 
-""" gruvbox
-let g:gruvbox_invert_selection = 0
+syntax on
+set background=dark
+let g:gruvbox_invert_selection=0
+colorscheme gruvbox
 
 "-------------------------------------
 " Custom mappings
