@@ -1,3 +1,7 @@
+" Load default settings
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
 " Use Pathogen
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
@@ -6,24 +10,19 @@ call pathogen#infect()
 " General config
 "-------------------------------------
 
-filetype plugin indent on
-
 set encoding=utf-8              " Enforce UTF-8
 
-set nocompatible                " Adjust some values to Vim, not Vi
 set hidden                      " Allow switching between unsaved buffers
 set ttyfast                     " Send more characters to the terminal, improving window redraw
 set nowrap                      " Turn off line wrap
 "set virtualedit=all            " Allow moving to areas with no text
 
 set title                       " Show filename on the footer
-set ruler                       " Show cursor position on the footer
 set number                      " Show line numbers
 set colorcolumn=120             " Show a guideline at column 120
 set linespace=1                 " Adjust the vertical space between lines
 
 set showmatch                   " Show tags related to that under the cursor
-set incsearch                   " Show results as the search term is typed
 set hlsearch                    " Highlight search results
 set ignorecase smartcase        " Search case-insensitively if search term contains only lowercase letters
 
@@ -32,7 +31,6 @@ set tabstop=4                   " Tabs are four spaces wide
 set shiftwidth=4                " Auto indent tabs are four spaces wide
 set softtabstop=4               " <Backspace> goes back four spaces when on an indentation
 set autoindent                  " Keep previous line's indentation when creating a new one
-set backspace=indent,eol,start  " <Backspace> works on autoindents, line breaks and start of line
 set pastetoggle=<F2>            " Allow to toggle paste mode for autoindent with <F2>
 
 """ Display whitespace character nicely
@@ -42,7 +40,6 @@ set listchars=tab:›\ ,trail:·,precedes:«,extends:»,eol:↲
 " Colors
 "-------------------------------------
 
-syntax on
 set background=dark
 let g:gruvbox_invert_selection=0
 colorscheme gruvbox
@@ -79,17 +76,14 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 "-------------------------------------
 " Custom autocmds
 "-------------------------------------
-augroup vimrcEx
-  autocmd!
-  " Go to the last line seen on this file
-  autocmd BufReadPost *
-    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-    \   exe "normal g`\"" |
-    \ endif
-  " Go back to the beginning when writing a Git commit message
-  autocmd BufReadPost COMMIT_EDITMSG
-    \ exe "normal! gg"
-augroup END
+if has("autocmd")
+  augroup gitCommitMessage
+    autocmd!
+    " Always go to the first line when writing a Git commit message
+    autocmd BufReadPost COMMIT_EDITMSG
+      \ exe "normal! gg"
+  augroup END
+endif
 
 "-------------------------------------
 " Specific config
