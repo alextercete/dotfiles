@@ -15,14 +15,10 @@ set title
 set number
 set nowrap
 set colorcolumn=120
-set listchars=tab:›\ ,trail:·,precedes:«,extends:»,eol:↲
 
 set background=dark
 let g:gruvbox_invert_selection=0
 colorscheme gruvbox
-
-" Use '\l' to toggle whitespace markers
-nmap <Leader>l :set list!<CR>
 
 
 "-------------------------------------
