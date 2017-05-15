@@ -1,7 +1,6 @@
 [core]
     autocrlf = true
     whitespace = cr-at-eol
-    editor = gvim
 [diff]
     tool = p4merge
 [difftool]
