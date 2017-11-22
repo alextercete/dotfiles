@@ -28,3 +28,6 @@
 [submodule "vim/.vim/bundle/editorconfig"]
 	path = .vim/bundle/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
+[submodule ".vim/bundle/typescript"]
+	path = .vim/bundle/typescript
+	url = git@github.com:leafgarland/typescript-vim.git
