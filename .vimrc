@@ -75,12 +75,6 @@ set hidden
 " Switch between files with '\\'
 nnoremap <Leader><Leader> <C-^>
 
-" CtrlP: Ignore .exe and .dll files
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](\.git|node_modules|bower_components|build|dist)$',
-  \ 'file': '\v\.(exe|dll)$'
-  \ }
-
 " Git: Always go to the first line when writing a Git commit message
 if has("autocmd")
   augroup gitCommitMessage
