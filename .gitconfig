@@ -21,6 +21,8 @@
     path = ~/.gitconfig.red-gate.user
 [includeIf "gitdir/i:d:/"]
     path = ~/.gitconfig.windows
+[includeIf "gitdir/i:/users/"]
+    path = ~/.gitconfig.macos
 [pull]
     ff = only
 [rebase]
