@@ -2,3 +2,4 @@
 
 .dotfiles/
 .gitconfig*.user
+.bashrc.local
