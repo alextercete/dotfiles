@@ -1,4 +1,4 @@
 #!/bin/bash
 
 # Load machine-specific config
-[[ -f ~/.bashrc.local ]] && source ~/.bashrc.local
+[[ -f "$HOME/.bashrc.local" ]] && source "$HOME/.bashrc.local"

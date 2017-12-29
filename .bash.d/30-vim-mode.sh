@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export EDITOR=vim
+export EDITOR='vim'
 
 # Use Vim mappings
 set -o vi
