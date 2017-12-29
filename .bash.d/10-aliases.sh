@@ -26,6 +26,6 @@ __git_complete dotfiles _git
 
 # OS-specific aliases
 os=$(get_operating_system)
-if [ -f ~/.bash_aliases.$os ]; then
+if [[ -f ~/.bash_aliases.$os ]]; then
   source ~/.bash_aliases.$os
 fi

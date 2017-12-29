@@ -3,8 +3,8 @@
 environment=~/.ssh/agent_environment
 
 agent_is_running() {
-  if [ "$SSH_AUTH_SOCK" ]; then
-    ssh-add -l >/dev/null 2>&1 || [ $? -eq 1 ]
+  if [[ "$SSH_AUTH_SOCK" ]]; then
+    ssh-add -l >/dev/null 2>&1 || [[ $? -eq 1 ]]
   else
     false
   fi
@@ -15,7 +15,7 @@ agent_has_keys() {
 }
 
 agent_restore() {
-  if [ -f "$environment" ]; then
+  if [[ -f "$environment" ]]; then
     source "$environment" >/dev/null
   fi
 }
