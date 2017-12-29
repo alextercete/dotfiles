@@ -1,3 +1,3 @@
 #!/bin/bash
 
-PATH=~/bin:$PATH
+PATH=$HOME/.local/bin:$PATH
