@@ -3,7 +3,7 @@
 get_operating_system() {
   case "$OSTYPE" in
     darwin*)
-      echo 'unix' ;;
+      echo 'macos' ;;
     msys*)
       echo 'windows' ;;
   esac
