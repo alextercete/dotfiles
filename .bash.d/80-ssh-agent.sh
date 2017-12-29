@@ -16,13 +16,13 @@ agent_has_keys() {
 
 agent_restore() {
   if [ -f "$environment" ]; then
-    . "$environment" >/dev/null
+    source "$environment" >/dev/null
   fi
 }
 
 agent_initialize() {
   (umask 077; ssh-agent >"$environment")
-  . "$environment" >/dev/null
+  source "$environment" >/dev/null
 }
 
 if ! agent_is_running; then
