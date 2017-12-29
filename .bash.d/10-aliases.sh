@@ -1,12 +1,12 @@
 #!/bin/bash
 
 get_operating_system() {
-    case "$OSTYPE" in
-        darwin*)
-            echo 'unix' ;;
-        msys*)
-            echo 'windows' ;;
-    esac
+  case "$OSTYPE" in
+    darwin*)
+      echo 'unix' ;;
+    msys*)
+      echo 'windows' ;;
+  esac
 }
 
 # Default aliases

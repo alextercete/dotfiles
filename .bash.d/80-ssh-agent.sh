@@ -3,36 +3,36 @@
 environment=~/.ssh/agent_environment
 
 agent_is_running() {
-    if [ "$SSH_AUTH_SOCK" ]; then
-        ssh-add -l >/dev/null 2>&1 || [ $? -eq 1 ]
-    else
-        false
-    fi
+  if [ "$SSH_AUTH_SOCK" ]; then
+    ssh-add -l >/dev/null 2>&1 || [ $? -eq 1 ]
+  else
+    false
+  fi
 }
 
 agent_has_keys() {
-    ssh-add -l >/dev/null 2>&1
+  ssh-add -l >/dev/null 2>&1
 }
 
 agent_restore() {
-    if [ -f "$environment" ]; then
-        . "$environment" >/dev/null
-    fi
+  if [ -f "$environment" ]; then
+    . "$environment" >/dev/null
+  fi
 }
 
 agent_initialize() {
-    (umask 077; ssh-agent >"$environment")
-    . "$environment" >/dev/null
+  (umask 077; ssh-agent >"$environment")
+  . "$environment" >/dev/null
 }
 
 if ! agent_is_running; then
-    agent_restore
+  agent_restore
 fi
 
 if ! agent_is_running; then
-    agent_initialize && ssh-add
+  agent_initialize && ssh-add
 elif ! agent_has_keys; then
-    ssh-add
+  ssh-add
 fi
 
 unset environment
