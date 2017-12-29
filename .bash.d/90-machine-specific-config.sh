@@ -1,6 +1,4 @@
 #!/bin/bash
 
 # Load machine-specific config
-if [[ -f ~/.bashrc.local ]]; then
-  source ~/.bashrc.local
-fi
+[[ -f ~/.bashrc.local ]] && source ~/.bashrc.local

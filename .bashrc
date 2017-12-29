@@ -6,9 +6,7 @@
 # Source scripts in the ~/.bash.d folder
 if [[ -d ~/.bash.d ]]; then
   for file in ~/.bash.d/*.sh; do
-    if [[ -r $file ]]; then
-      source $file
-    fi
+    [[ -r $file ]] && source $file
   done
 
   unset file
