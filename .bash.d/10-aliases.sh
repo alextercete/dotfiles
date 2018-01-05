@@ -28,5 +28,5 @@ fi
 
 # OS-specific aliases
 os="$(get_operating_system)"
-[[ -f "~/.bash_aliases.${os}" ]] && source "~/.bash_aliases.${os}"
+[[ -f "$HOME/.bash_aliases.${os}" ]] && source "$HOME/.bash_aliases.${os}"
 unset os
