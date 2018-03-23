@@ -9,7 +9,8 @@ reset="\[$(tput sgr0)\]"
 # $
 PS1=${green}'\u '${cyan}'\w'
 PS1+=${bold}${cyan}'$(declare -F __git_ps1 >/dev/null && __git_ps1)'
-PS1+=${bold}${green}$'\n$ '
+PS1+=$'\n'
+PS1+=${bold}${green}'\$ '
 PS1+=${reset}
 
 unset cyan green bold reset
