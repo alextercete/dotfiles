@@ -16,9 +16,14 @@ set number
 set nowrap
 set colorcolumn=120
 
-set background=dark
-let g:gruvbox_invert_selection=0
-colorscheme gruvbox
+" Match VS Code's theme when running within its integrated terminal
+if $TERM_PROGRAM == 'vscode'
+  colorscheme default
+else
+  set background=dark
+  let g:gruvbox_invert_selection=0
+  colorscheme gruvbox
+endif
 
 
 "-------------------------------------
