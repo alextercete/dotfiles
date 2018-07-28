@@ -4,9 +4,6 @@
 [submodule "vim/.vim/bundle/json"]
 	path = .vim/pack/alextercete/start/json
 	url = https://github.com/elzr/vim-json.git
-[submodule "vim/.vim/bundle/markdown"]
-	path = .vim/pack/alextercete/start/markdown
-	url = https://github.com/tpope/vim-markdown.git
 [submodule "vim/.vim/bundle/ps1"]
 	path = .vim/pack/alextercete/start/ps1
 	url = https://github.com/PProvost/vim-ps1.git
