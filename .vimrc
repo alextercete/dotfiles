@@ -39,16 +39,6 @@ set autoindent
 
 set showmatch
 
-" Disable arrow keys for moving around
-noremap <Up> <NOP>
-inoremap <Up> <NOP>
-noremap <Down> <NOP>
-inoremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
-inoremap <Left> <NOP>
-inoremap <Right> <NOP>
-
 " Disable quote concealing in JSON files
 let g:vim_json_syntax_conceal = 0
 
