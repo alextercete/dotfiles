@@ -1,21 +1,18 @@
 [submodule "vim/.vim/bundle/gruvbox"]
-	path = .vim/bundle/gruvbox
+	path = .vim/pack/alextercete/start/gruvbox
 	url = https://github.com/morhetz/gruvbox
 [submodule "vim/.vim/bundle/json"]
-	path = .vim/bundle/json
+	path = .vim/pack/alextercete/start/json
 	url = https://github.com/elzr/vim-json.git
 [submodule "vim/.vim/bundle/markdown"]
-	path = .vim/bundle/markdown
+	path = .vim/pack/alextercete/start/markdown
 	url = https://github.com/tpope/vim-markdown.git
-[submodule "vim/.vim/bundle/pathogen"]
-	path = .vim/bundle/pathogen
-	url = https://github.com/tpope/vim-pathogen.git
 [submodule "vim/.vim/bundle/ps1"]
-	path = .vim/bundle/ps1
+	path = .vim/pack/alextercete/start/ps1
 	url = https://github.com/PProvost/vim-ps1.git
 [submodule "vim/.vim/bundle/editorconfig"]
-	path = .vim/bundle/editorconfig
+	path = .vim/pack/alextercete/start/editorconfig
 	url = https://github.com/editorconfig/editorconfig-vim.git
 [submodule ".vim/bundle/typescript"]
-	path = .vim/bundle/typescript
+	path = .vim/pack/alextercete/start/typescript
 	url = git@github.com:leafgarland/typescript-vim.git

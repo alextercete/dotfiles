@@ -1,10 +1,6 @@
 " Load default settings
 source $VIMRUNTIME/defaults.vim
 
-" Use Pathogen
-runtime bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect()
-
 
 "-------------------------------------
 " APPEARANCE
