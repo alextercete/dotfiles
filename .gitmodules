@@ -1,9 +1,6 @@
 [submodule "vim/.vim/bundle/gruvbox"]
 	path = .vim/pack/alextercete/start/gruvbox
 	url = https://github.com/morhetz/gruvbox
-[submodule "vim/.vim/bundle/json"]
-	path = .vim/pack/alextercete/start/json
-	url = https://github.com/elzr/vim-json.git
 [submodule "vim/.vim/bundle/ps1"]
 	path = .vim/pack/alextercete/start/ps1
 	url = https://github.com/PProvost/vim-ps1.git
