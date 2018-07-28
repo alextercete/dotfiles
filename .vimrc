@@ -1,5 +1,4 @@
 " Load default settings
-unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
 " Use Pathogen
@@ -40,12 +39,6 @@ set autoindent
 
 set showmatch
 
-" Copy selection to clipboard with '\y'
-map <Leader>y "*y
-
-" Paste from clipboard into a new line with '\p'
-nmap <Leader>p :pu *<CR>
-
 " Disable arrow keys for moving around
 noremap <Up> <NOP>
 inoremap <Up> <NOP>
@@ -76,9 +69,6 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 "-------------------------------------
 
 set hidden
-
-" Switch between files with '\\'
-nnoremap <Leader><Leader> <C-^>
 
 " Git: Always go to the first line when writing a Git commit message
 if has("autocmd")
