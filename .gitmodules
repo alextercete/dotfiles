@@ -1,12 +1,3 @@
-[submodule "vim/.vim/bundle/coffee-script"]
-	path = .vim/bundle/coffee-script
-	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/.vim/bundle/commentary"]
-	path = .vim/bundle/commentary
-	url = https://github.com/tpope/vim-commentary.git
-[submodule "vim/.vim/bundle/fugitive"]
-	path = .vim/bundle/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
 [submodule "vim/.vim/bundle/gruvbox"]
 	path = .vim/bundle/gruvbox
 	url = https://github.com/morhetz/gruvbox
