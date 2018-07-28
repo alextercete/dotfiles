@@ -10,6 +10,7 @@ set title
 set number
 set nowrap
 set colorcolumn=120
+set termguicolors
 
 " Match VS Code's theme when running within its integrated terminal
 if $TERM_PROGRAM == 'vscode'
