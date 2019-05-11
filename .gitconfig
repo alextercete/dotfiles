@@ -25,6 +25,8 @@
     path = ~/.gitconfig.windows
 [includeIf "gitdir/i:/users/"]
     path = ~/.gitconfig.macos
+[commit]
+    gpgsign = true
 [pull]
     ff = only
 [rebase]
