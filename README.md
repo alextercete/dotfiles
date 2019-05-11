@@ -28,8 +28,6 @@ curl -s https://gist.githubusercontent.com/alextercete/73b3019dc9c057decbb2cb54c
 Configure your Git user:
 
 ```shell
-git config --file $HOME/.gitconfig.user user.name "Your Name"
-```
-```shell
-git config --file $HOME/.gitconfig.user user.email you@example.com
+git config --file $HOME/.gitconfig.user user.name "<name>"
+git config --file $HOME/.gitconfig.user user.email "<email>"
 ```
