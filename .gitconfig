@@ -21,6 +21,8 @@
     path = ~/.gitconfig.user
 [includeIf "gitdir:red-gate/"]
     path = ~/.gitconfig.red-gate.user
+[includeIf "gitdir/i:c:/"]
+    path = ~/.gitconfig.windows
 [includeIf "gitdir/i:d:/"]
     path = ~/.gitconfig.windows
 [includeIf "gitdir/i:/users/"]
