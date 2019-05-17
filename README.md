@@ -33,3 +33,10 @@ git config --file $HOME/.gitconfig.user user.name "<name>"
 git config --file $HOME/.gitconfig.user user.email "<email>"
 git config --file $HOME/.gitconfig.user user.signingkey "<signing-key>"
 ```
+
+If you're using Keybase, configure your PGP key:
+
+```shell
+keybase pgp export | gpg --import
+keybase pgp export --secret | gpg --allow-secret-key-import --import
+```
