@@ -33,5 +33,3 @@
     ff = only
 [rebase]
     autosquash = true
-
-# vim: set ft=gitconfig :
