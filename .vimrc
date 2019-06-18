@@ -11,8 +11,8 @@ set number
 set nowrap
 set colorcolumn=120
 
-" Match VS Code's theme when running within its integrated terminal
-if $TERM_PROGRAM == 'vscode'
+" Try to match the editor's theme when running within an integrated terminal
+if $TERM_PROGRAM == 'vscode' || $TERMINAL_EMULATOR == 'JetBrains-JediTerm'
   colorscheme default
 else
   set termguicolors
