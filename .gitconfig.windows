@@ -5,14 +5,11 @@
     tool = p4merge
 [difftool]
     prompt = false
-[difftool "p4merge"]
-    cmd = p4merge -C utf8 $LOCAL $REMOTE
 [merge]
     tool = p4merge
 [mergetool]
     keepBackup = false
 [mergetool "p4merge"]
     trustExitCode = true
-    cmd = p4merge -C utf8 $BASE $LOCAL $REMOTE $MERGED
 
 # vim: set ft=gitconfig :
