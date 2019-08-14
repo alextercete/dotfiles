@@ -11,6 +11,7 @@
 1. Install [Homebrew](https://brew.sh/)
 
 1. Run
+
    ```shell
    brew install git bash-completion gpg pinentry-mac
    echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
@@ -19,6 +20,7 @@
 ### Ubuntu
 
 1. Run
+
    ```shell
    sudo apt update
    sudo apt install -y curl git
