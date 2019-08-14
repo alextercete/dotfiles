@@ -16,6 +16,14 @@
    echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
    ```
 
+### Ubuntu
+
+1. Run
+   ```shell
+   sudo apt update
+   sudo apt install -y curl git
+   ```
+
 ## Installation
 
 Download and run the [install script](https://gist.github.com/alextercete/73b3019dc9c057decbb2cb54cb00e88c). Alternatively, run the following:
