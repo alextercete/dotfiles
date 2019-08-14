@@ -21,6 +21,7 @@ agent_restore() {
 }
 
 agent_initialize() {
+  mkdir -p $(dirname "${environment}")
   (umask 077; ssh-agent >"${environment}")
   source "${environment}" >/dev/null
 }
