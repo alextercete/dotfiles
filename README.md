@@ -15,6 +15,7 @@
    ```shell
    brew install git bash-completion gpg pinentry-mac
    echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+   gpg-connect-agent reloadagent /bye
    ```
 
 ### Ubuntu
