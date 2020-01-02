@@ -1,4 +1,0 @@
-#!/bin/bash
-alias ls='ls --color=auto'
-alias e='explorer .'
-alias vs='start `find . -maxdepth 2 -type f -name "*.sln" | head -n 1`'

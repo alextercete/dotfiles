@@ -13,7 +13,7 @@
 1. Run
 
    ```shell
-   brew install git bash-completion gpg pinentry-mac
+   brew install git gpg pinentry-mac
    echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
    gpg-connect-agent reloadagent /bye
    ```
@@ -32,13 +32,13 @@
 Download and run the [install script](https://gist.github.com/alextercete/73b3019dc9c057decbb2cb54cb00e88c). Alternatively, run the following:
 
 ```shell
-curl -s https://gist.githubusercontent.com/alextercete/73b3019dc9c057decbb2cb54cb00e88c/raw/dotfiles.sh | bash -s <github-username>
+sh -c "$(curl -s https://gist.githubusercontent.com/alextercete/73b3019dc9c057decbb2cb54cb00e88c/raw/dotfiles.sh)" sh <github-username>
 ```
 
 Restart your shell. Alternatively, run the following:
 
 ```shell
-source $HOME/.bashrc
+source $HOME/.zshrc
 ```
 
 ## Configuration
