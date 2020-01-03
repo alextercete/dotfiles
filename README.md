@@ -58,9 +58,9 @@ exec zsh
 Configure your Git user:
 
 ```shell
-git config --file $HOME/.gitconfig.user user.name "<name>"
-git config --file $HOME/.gitconfig.user user.email "<email>"
-git config --file $HOME/.gitconfig.user user.signingkey "<signing-key>"
+git config --file ~/.gitconfig.user user.name "<name>"
+git config --file ~/.gitconfig.user user.email "<email>"
+git config --file ~/.gitconfig.user user.signingkey "<signing-key>"
 ```
 
 If you're using Keybase, configure your PGP key:
