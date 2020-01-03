@@ -1,11 +1,7 @@
 " Load default settings
 source $VIMRUNTIME/defaults.vim
 
-
-"-------------------------------------
-" APPEARANCE
-"-------------------------------------
-
+""" APPEARANCE
 set title
 set number
 set nowrap
@@ -21,11 +17,7 @@ else
   colorscheme gruvbox
 endif
 
-
-"-------------------------------------
-" TEXT EDITING
-"-------------------------------------
-
+""" TEXT EDITING
 set encoding=utf-8
 
 set expandtab
@@ -36,22 +28,14 @@ set autoindent
 
 set showmatch
 
-
-"-------------------------------------
-" SEARCHING
-"-------------------------------------
-
+""" SEARCHING
 set hlsearch
 set ignorecase smartcase
 
 " Mute search highlighting with <C-l>
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
-
-"-------------------------------------
-" FILE MANAGEMENT
-"-------------------------------------
-
+""" FILE MANAGEMENT
 set hidden
 
 " Git: Always go to the first line when writing a Git commit message
