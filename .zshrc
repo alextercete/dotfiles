@@ -10,7 +10,7 @@ export PATH="$HOME/.local/bin:$PATH"
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
 # Set aliases
-alias gs="git status"
+alias gs="git status --short"
 alias gd="git diff"
 alias gds="git diff --staged"
 alias gg="git graph"
