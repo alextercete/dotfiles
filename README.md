@@ -24,10 +24,22 @@
 
    ```shell
    sudo apt update
-   sudo apt install -y curl git
+   sudo apt install -y curl git zsh
    ```
 
 ## Installation
+
+Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh):
+
+```shell
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+```
+
+Make Zsh your default shell:
+
+```shell
+chsh -s /bin/zsh
+```
 
 Download and run the [install script](https://gist.github.com/alextercete/73b3019dc9c057decbb2cb54cb00e88c). Alternatively, run the following:
 
@@ -35,10 +47,10 @@ Download and run the [install script](https://gist.github.com/alextercete/73b301
 sh -c "$(curl -s https://gist.githubusercontent.com/alextercete/73b3019dc9c057decbb2cb54cb00e88c/raw/dotfiles.sh)" sh <github-username>
 ```
 
-Restart your shell. Alternatively, run the following:
+Restart your terminal. Alternatively, run the following:
 
 ```shell
-source $HOME/.zshrc
+exec zsh
 ```
 
 ## Configuration
