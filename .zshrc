@@ -1,5 +1,6 @@
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="lambda"
+export ZSH_CUSTOM="$HOME/.zsh"
+ZSH_THEME="tercete"
 plugins=(git autojump vi-mode ssh-agent)
 source "$ZSH/oh-my-zsh.sh"
 
