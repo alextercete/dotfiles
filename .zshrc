@@ -6,6 +6,9 @@ source "$ZSH/oh-my-zsh.sh"
 # Load local binaries
 export PATH="$HOME/.local/bin:$PATH"
 
+# Customize `ls` colours
+export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
+
 # Set aliases
 alias gs="git status"
 alias gd="git diff"
