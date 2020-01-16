@@ -28,6 +28,11 @@ set autoindent
 
 set showmatch
 
+" Yank to and paste from system clipboard
+if has("clipboard")
+  set clipboard^=unnamed,unnamedplus
+endif
+
 """ SEARCHING
 set hlsearch
 set ignorecase smartcase
