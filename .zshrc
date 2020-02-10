@@ -7,6 +7,10 @@ source "$ZSH/oh-my-zsh.sh"
 # Load local binaries
 export PATH="$HOME/.local/bin:$PATH"
 
+# Use Vim as the default editor
+export EDITOR=vim
+export VISUAL=vim
+
 # Customize `ls` colours
 export LSCOLORS=ExGxBxDxCxEgEdxbxgxcxd
 
