@@ -1,7 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$HOME/.zsh"
 ZSH_THEME="tercete"
-plugins=(git autojump vi-mode ssh-agent)
+plugins=(git autojump vi-mode ssh-agent gpg-agent)
 source "$ZSH/oh-my-zsh.sh"
 
 # Load local binaries
