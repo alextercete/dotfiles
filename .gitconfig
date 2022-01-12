@@ -13,8 +13,8 @@
     excludesfile = ~/.gitignore.global
 [include]
     path = ~/.gitconfig.user
-[includeIf "gitdir:red-gate/"]
-    path = ~/.gitconfig.red-gate.user
+[includeIf "gitdir:vtex/"]
+    path = ~/.gitconfig.vtex.user
 [includeIf "gitdir/i:c:/"]
     path = ~/.gitconfig.windows
 [includeIf "gitdir/i:d:/"]
