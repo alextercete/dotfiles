@@ -1,4 +1,5 @@
 " Load default settings
+unlet! skip_defaults_vim
 source $VIMRUNTIME/defaults.vim
 
 """ APPEARANCE
