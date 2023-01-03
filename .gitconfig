@@ -25,6 +25,8 @@
     path = ~/.gitconfig.unix
 [commit]
     gpgsign = true
+[gpg]
+    format = ssh
 [pull]
     ff = only
 [rebase]
