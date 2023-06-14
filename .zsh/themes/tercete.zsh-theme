@@ -1,4 +1,4 @@
-PROMPT='%F{green}‹dir:%B%~%b›%f $(git_prompt_info)$(aws_prompt_info)$(kube_prompt_info)$(vpn_prompt_info)'$'\n''%B%F{green}$ %b%f'
+PROMPT='%F{green}‹dir:%B%~%b›%f $(git_prompt_info)$(aws_prompt_info)$(kube_prompt_info)'$'\n''%B%F{green}$ %b%f'
 RPROMPT=''
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%F{green}‹git:%B"
