@@ -13,9 +13,8 @@
 1. Run
 
    ```shell
-   brew install git gpg pinentry-mac
-   echo "pinentry-program /usr/local/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
-   gpg-connect-agent reloadagent /bye
+   brew install git
+   brew install --cask 1password/tap/1password-cli
    ```
 
 ### Ubuntu
@@ -60,12 +59,10 @@ Configure your Git user:
 ```shell
 git config --file ~/.gitconfig.user user.name "<name>"
 git config --file ~/.gitconfig.user user.email "<email>"
-git config --file ~/.gitconfig.user user.signingkey "<signing-key>"
 ```
 
-If you're using Keybase, configure your PGP key:
+If you're using 1Password, configure [commit signing](https://developer.1password.com/docs/ssh/git-commit-signing/):
 
 ```shell
-keybase pgp export | gpg --import
-keybase pgp export --secret | gpg --allow-secret-key-import --import
+git config --file ~/.gitconfig.user user.signingkey "$(op item get "SSH key" --fields "label=public key")"
 ```
