@@ -1,6 +1,7 @@
 [alias]
     graph = log --decorate --oneline --graph
     shove = push --force-with-lease
+    yield = reset --hard @{upstream}
     amend = commit --amend --no-edit
     fixup = commit --fixup
 [color]
