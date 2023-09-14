@@ -6,5 +6,3 @@
     log = diff-highlight | less -FRSX
     diff = diff-highlight | less -FRSX
     show = diff-highlight | less -FRSX
-[gpg "ssh"]
-    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"

@@ -19,9 +19,9 @@
 [includeIf "gitdir/i:c:/"]
     path = ~/.gitconfig.windows
 [includeIf "gitdir/i:/users/"]
-    path = ~/.gitconfig.unix
+    path = ~/.gitconfig.macos
 [includeIf "gitdir/i:/home/"]
-    path = ~/.gitconfig.unix
+    path = ~/.gitconfig.linux
 [commit]
     gpgsign = true
 [gpg]
