@@ -18,8 +18,6 @@
     path = ~/.gitconfig.vtex.user
 [includeIf "gitdir/i:c:/"]
     path = ~/.gitconfig.windows
-[includeIf "gitdir/i:d:/"]
-    path = ~/.gitconfig.windows
 [includeIf "gitdir/i:/users/"]
     path = ~/.gitconfig.unix
 [includeIf "gitdir/i:/home/"]
