@@ -52,3 +52,6 @@ if has("autocmd")
       \ exe "normal! gg"
   augroup END
 endif
+
+" Git: Enable syntax highligthing for included .gitconfig files
+autocmd BufRead,BufNewFile .gitconfig.* setfiletype gitconfig

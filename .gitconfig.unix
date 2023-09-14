@@ -8,5 +8,3 @@
     show = diff-highlight | less -FRSX
 [gpg "ssh"]
     program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
-
-# vim: set ft=gitconfig :
