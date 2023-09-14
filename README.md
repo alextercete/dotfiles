@@ -4,7 +4,15 @@
 
 ### Windows
 
-1. Install [Git](https://git-scm.com/download/win)
+1. Run
+
+   ```
+   winget install -e --id Git.Git
+   winget install -e --id JanDeDobbeleer.OhMyPosh
+   winget install -e --id AgileBits.1Password.CLI
+   Install-Module z
+   Install-Module posh-git
+   ```
 
 ### macOS
 
