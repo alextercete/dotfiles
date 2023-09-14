@@ -23,7 +23,7 @@
 
    ```shell
    sudo apt update
-   sudo apt install -y curl git zsh
+   sudo apt install -y curl git zsh socat
    ```
 
 ## Installation
