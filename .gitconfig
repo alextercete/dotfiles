@@ -4,8 +4,6 @@
     yield = reset --hard @{upstream}
     amend = commit --amend --no-edit
     fixup = commit --fixup
-[color]
-    ui = true
 [color "diff"]
     whitespace = red reverse
 [help]
