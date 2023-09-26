@@ -1,8 +1,5 @@
 [core]
     autocrlf = input
+    pager = diff-highlight | less -FRSX
 [interactive]
     diffFilter = diff-highlight
-[pager]
-    log = diff-highlight | less -FRSX
-    diff = diff-highlight | less -FRSX
-    show = diff-highlight | less -FRSX
