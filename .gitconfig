@@ -1,5 +1,5 @@
 [alias]
-    graph = log --decorate --oneline --graph
+    graph = log --oneline --graph
     shove = push --force-with-lease
     yield = reset --hard @{upstream}
     amend = commit --amend --no-edit
