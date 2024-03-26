@@ -2,6 +2,9 @@
     autocrlf = true
     whitespace = cr-at-eol
     sshCommand = C:/Windows/System32/OpenSSH/ssh.exe
+    pager = delta --diff-highlight
+[interactive]
+    diffFilter = delta --diff-highlight
 [gpg "ssh"]
     program = "C:/Users/AlexTercete/AppData/Local/1Password/app/8/op-ssh-sign.exe"
 [diff]

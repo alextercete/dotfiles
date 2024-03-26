@@ -10,6 +10,7 @@
    winget install -e --id Git.Git
    winget install -e --id JanDeDobbeleer.OhMyPosh
    winget install -e --id AgileBits.1Password.CLI
+   winget install -e --id dandavison.delta
    Install-Module z
    Install-Module posh-git
    ```
