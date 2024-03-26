@@ -19,4 +19,10 @@ alias gs="git status --short"
 alias gd="git diff"
 alias gds="git diff --staged"
 alias gg="git graph"
+function gr {
+  git for-each-ref --sort=-creatordate --sort=-HEAD --format='%(refname)' \
+    | sed 's#^refs/remotes/#[remote-branch] #; s#^refs/heads/#[branch] #; s#^refs/tags/#[tag] #;' \
+    | fzf --ansi \
+    | awk '{sub("origin/", "", $2); print $2}'
+}
 alias dotfiles="git --git-dir=$HOME/.dotfiles --work-tree=$HOME"

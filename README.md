@@ -11,6 +11,7 @@
    winget install -e --id JanDeDobbeleer.OhMyPosh
    winget install -e --id AgileBits.1Password.CLI
    winget install -e --id dandavison.delta
+   winget install -e --id junegunn.fzf
    Install-Module z
    Install-Module posh-git
    ```
@@ -22,7 +23,7 @@
 1. Run
 
    ```shell
-   brew install git
+   brew install git fzf
    brew install --cask 1password/tap/1password-cli
    ```
 
@@ -32,7 +33,7 @@
 
    ```shell
    sudo apt update
-   sudo apt install -y curl git zsh socat
+   sudo apt install -y curl git zsh socat fzf
    ```
 
 ## Installation
