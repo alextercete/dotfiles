@@ -44,7 +44,7 @@ iex "& { $(Invoke-RestMethod https://gist.githubusercontent.com/alextercete/73b3
 
 ### macOS & Ubuntu
 
-```shell
+```
 sh -c "$(curl -s https://gist.githubusercontent.com/alextercete/73b3019dc9c057decbb2cb54cb00e88c/raw/dotfiles.sh)" sh <github-username>
 ```
 
@@ -52,13 +52,13 @@ sh -c "$(curl -s https://gist.githubusercontent.com/alextercete/73b3019dc9c057de
 
 Configure your Git user:
 
-```shell
+```
 git config --file ~/.gitconfig.user user.name "<name>"
 git config --file ~/.gitconfig.user user.email "<email>"
 ```
 
 If you're using 1Password, configure [commit signing](https://developer.1password.com/docs/ssh/git-commit-signing/):
 
-```shell
+```
 git config --file ~/.gitconfig.user user.signingkey "$(op item get "SSH key" --fields "label=public key")"
 ```
