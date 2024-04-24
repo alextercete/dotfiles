@@ -34,16 +34,18 @@ chsh -s $(which zsh)
 
 ## Installation
 
-Download and run the [install script](https://gist.github.com/alextercete/73b3019dc9c057decbb2cb54cb00e88c). Alternatively, run the following:
+Download and run the [install script](https://gist.github.com/alextercete/73b3019dc9c057decbb2cb54cb00e88c), then restart your terminal. Alternatively, run the commands below.
+
+### Windows
+
+```
+iex "& { $(Invoke-RestMethod https://gist.githubusercontent.com/alextercete/73b3019dc9c057decbb2cb54cb00e88c/raw/dotfiles.ps1) } <github-username>"
+```
+
+### macOS & Ubuntu
 
 ```shell
 sh -c "$(curl -s https://gist.githubusercontent.com/alextercete/73b3019dc9c057decbb2cb54cb00e88c/raw/dotfiles.sh)" sh <github-username>
-```
-
-Restart your terminal. Alternatively, run the following:
-
-```shell
-exec zsh
 ```
 
 ## Configuration
