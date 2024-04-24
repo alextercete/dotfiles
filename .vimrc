@@ -14,8 +14,7 @@ if $TERM_PROGRAM == 'vscode' || $TERMINAL_EMULATOR == 'JetBrains-JediTerm'
 else
   set termguicolors
   set background=dark
-  let g:gruvbox_invert_selection=0
-  colorscheme gruvbox
+  colorscheme retrobox
 endif
 
 """ TEXT EDITING
