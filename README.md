@@ -20,6 +20,7 @@ Install-Module posh-git
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 brew install git fzf
 brew install --cask 1password/tap/1password-cli
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 ```
 
 ### Ubuntu
@@ -27,21 +28,11 @@ brew install --cask 1password/tap/1password-cli
 ```
 sudo apt update
 sudo apt install -y curl git zsh socat fzf
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+chsh -s $(which zsh)
 ```
 
 ## Installation
-
-Install [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh):
-
-```shell
-git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-```
-
-Make Zsh your default shell:
-
-```shell
-chsh -s /bin/zsh
-```
 
 Download and run the [install script](https://gist.github.com/alextercete/73b3019dc9c057decbb2cb54cb00e88c). Alternatively, run the following:
 
