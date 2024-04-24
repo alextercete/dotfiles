@@ -1,9 +1,6 @@
 [submodule "vim/.vim/bundle/ps1"]
 	path = .vim/pack/alextercete/start/ps1
 	url = https://github.com/PProvost/vim-ps1.git
-[submodule ".vim/bundle/typescript"]
-	path = .vim/pack/alextercete/start/typescript
-	url = https://github.com/leafgarland/typescript-vim.git
 [submodule ".vim/pack/alextercete/start/prettier"]
 	path = .vim/pack/alextercete/start/prettier
 	url = https://github.com/prettier/vim-prettier.git
