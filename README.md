@@ -53,12 +53,12 @@ sh -c "$(curl -s https://gist.githubusercontent.com/alextercete/73b3019dc9c057de
 Configure your Git user:
 
 ```
-git config --file ~/.gitconfig.user user.name "<name>"
-git config --file ~/.gitconfig.user user.email "<email>"
+git config --file $HOME/.gitconfig.user user.name "<name>"
+git config --file $HOME/.gitconfig.user user.email "<email>"
 ```
 
 If you're using 1Password, configure [commit signing](https://developer.1password.com/docs/ssh/git-commit-signing/):
 
 ```
-git config --file ~/.gitconfig.user user.signingkey "$(op item get "SSH key" --fields "label=public key")"
+git config --file $HOME/.gitconfig.user user.signingkey "$(op item get "SSH key" --fields "label=public key")"
 ```
