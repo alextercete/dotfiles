@@ -4,37 +4,30 @@
 
 ### Windows
 
-1. Run
-
-   ```
-   winget install -e --id Git.Git
-   winget install -e --id JanDeDobbeleer.OhMyPosh
-   winget install -e --id AgileBits.1Password.CLI
-   winget install -e --id dandavison.delta
-   winget install -e --id junegunn.fzf
-   Install-Module z
-   Install-Module posh-git
-   ```
+```
+winget install -e --id Git.Git
+winget install -e --id JanDeDobbeleer.OhMyPosh
+winget install -e --id AgileBits.1Password.CLI
+winget install -e --id dandavison.delta
+winget install -e --id junegunn.fzf
+Install-Module z
+Install-Module posh-git
+```
 
 ### macOS
 
-1. Install [Homebrew](https://brew.sh/)
-
-1. Run
-
-   ```shell
-   brew install git fzf
-   brew install --cask 1password/tap/1password-cli
-   ```
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install git fzf
+brew install --cask 1password/tap/1password-cli
+```
 
 ### Ubuntu
 
-1. Run
-
-   ```shell
-   sudo apt update
-   sudo apt install -y curl git zsh socat fzf
-   ```
+```
+sudo apt update
+sudo apt install -y curl git zsh socat fzf
+```
 
 ## Installation
 
