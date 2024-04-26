@@ -10,6 +10,9 @@ function gr {
 }
 function dotfiles { git --git-dir=$HOME/.dotfiles --work-tree=$HOME $args }
 
+git config --file $HOME/.gitconfig.local core.sshCommand $("$env:WINDIR\System32\OpenSSH\ssh.exe" -Replace "\\", "/")
+git config --file $HOME/.gitconfig.local gpg.ssh.program $("$env:LOCALAPPDATA\1Password\app\8\op-ssh-sign.exe" -Replace "\\", "/")
+
 Import-Module posh-git
 Import-Module z
 oh-my-posh init pwsh --config "$HOME/.tercete.omp.json" | Invoke-Expression
