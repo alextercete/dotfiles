@@ -1,7 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export ZSH_CUSTOM="$HOME/.zsh"
 ZSH_THEME="tercete"
-plugins=(nvm z wsl kube kubectl aws vi-mode)
+plugins=(nvm z wsl kube kubectl ssh aws vi-mode)
 source "$ZSH/oh-my-zsh.sh"
 
 # Load local binaries
