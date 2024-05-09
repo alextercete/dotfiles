@@ -10,14 +10,14 @@
     autocorrect = 1
 [core]
     excludesfile = ~/.gitignore.global
-[include]
-    path = ~/.gitconfig.local
 [includeIf "gitdir/i:c:/"]
     path = ~/.gitconfig.windows
 [includeIf "gitdir/i:/users/"]
     path = ~/.gitconfig.macos
 [includeIf "gitdir/i:/home/"]
     path = ~/.gitconfig.linux
+[include]
+    path = ~/.gitconfig.local
 [commit]
     gpgsign = true
 [gpg]
