@@ -1,6 +1,7 @@
 [submodule ".vim/pack/alextercete/start/prettier"]
 	path = .vim/pack/alextercete/start/prettier
 	url = https://github.com/prettier/vim-prettier.git
+	branch = master
 [submodule ".vim/pack/alextercete/start/dim"]
 	path = .vim/pack/alextercete/start/dim
 	url = git@github.com:jeffkreeftmeijer/vim-dim.git
