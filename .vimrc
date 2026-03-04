@@ -8,14 +8,7 @@ set number
 set nowrap
 set colorcolumn=120
 
-" Try to match the editor's theme when running within an integrated terminal
-if $TERM_PROGRAM == 'vscode' || $TERMINAL_EMULATOR == 'JetBrains-JediTerm'
-  colorscheme default
-else
-  set termguicolors
-  set background=dark
-  colorscheme retrobox
-endif
+colorscheme dim
 
 """ TEXT EDITING
 set encoding=utf-8
