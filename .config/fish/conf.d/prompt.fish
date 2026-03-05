@@ -10,6 +10,7 @@ function fish_prompt
     end
 
     string join '' -- \
+        (set_color green --bold) 'fish ' (set_color normal) \
         (prompt_segment dir (prompt_pwd) --color green) \
         (prompt_segment git (fish_git_prompt %s) --color green) \
         (prompt_segment ssh $prompt_ssh --color cyan) \
