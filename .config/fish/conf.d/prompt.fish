@@ -4,9 +4,15 @@ function fish_prompt
 
     set -l prompt_error $status
 
+    set -l prompt_ssh ''
+    if set -q SSH_CONNECTION
+        set prompt_ssh (hostname -s)
+    end
+
     string join '' -- \
         (prompt_segment dir (prompt_pwd) --color green) \
         (prompt_segment git (fish_git_prompt %s) --color green) \
+        (prompt_segment ssh $prompt_ssh --color cyan) \
         (prompt_segment vim (prompt_mode) --color grey --hide-if I) \
         (prompt_segment err $prompt_error --color red --hide-if 0) \
         \n (set_color green --bold) '$ ' (set_color normal)
