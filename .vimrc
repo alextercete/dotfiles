@@ -36,14 +36,5 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 """ FILE MANAGEMENT
 set hidden
 
-" Git: Always go to the first line when writing a Git commit message
-if has("autocmd")
-  augroup gitCommitMessage
-    autocmd!
-    autocmd BufReadPost COMMIT_EDITMSG
-      \ exe "normal! gg"
-  augroup END
-endif
-
 " Git: Enable syntax highligthing for included .gitconfig files
 autocmd BufRead,BufNewFile .gitconfig.* setfiletype gitconfig
