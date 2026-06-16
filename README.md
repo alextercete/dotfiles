@@ -61,3 +61,8 @@ If you're using 1Password, configure [commit signing](https://developer.1passwor
 ```
 git config --file $HOME/.gitconfig.local user.signingkey "$(op item get "SSH key" --fields "label=public key")"
 ```
+
+Load the OS-specific config:
+```
+git config --file $HOME/.gitconfig.local include.path "~/.gitconfig.linux"
+```
