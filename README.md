@@ -9,7 +9,6 @@ winget install -e --id Git.Git
 winget install -e --id JanDeDobbeleer.OhMyPosh
 winget install -e --id AgileBits.1Password.CLI
 winget install -e --id dandavison.delta
-winget install -e --id junegunn.fzf
 Install-Module z
 Install-Module posh-git
 ```
@@ -18,7 +17,7 @@ Install-Module posh-git
 
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install git fzf
+brew install git
 brew install --cask 1password/tap/1password-cli
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 ```
@@ -27,7 +26,7 @@ git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 
 ```
 sudo apt update
-sudo apt install -y curl git zsh socat fzf
+sudo apt install -y curl git zsh socat
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 chsh -s $(which zsh)
 ```
