@@ -20,15 +20,16 @@ Install-Module posh-git
 brew install git
 brew install --cask 1password/tap/1password-cli
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 ```
 
 ### Ubuntu
 
 ```
 sudo apt update
-sudo apt install -y curl git zsh socat
+sudo apt install -y curl git zsh fish socat
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
-chsh -s $(which zsh)
+curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 ```
 
 ## Installation
